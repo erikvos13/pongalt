@@ -15,11 +15,11 @@ BALL_RADIUS = 7
 
 SCORE_FONT = pygame.font.SysFont("comicsans", 50)
 
-WINNING_SCORE = 3
+WINNING_SCORE = 10
     
 class Paddle:
     COLOR = WHITE             #attributen die elke instance meekrijgt kan hier en hoeft niet in een functie
-    VEL = 4
+    VEL = 5
     
     def __init__(self, x, y, width, height):
         self.x = self.original_x = x
@@ -141,7 +141,7 @@ def main():
     
     ball1 = Ball(WIDTH//2, HEIGHT//2, BALL_RADIUS)
     ball2 = Ball(WIDTH//2, HEIGHT//2, BALL_RADIUS)
-    ball2.x_vel = -5
+    ball2.x_vel = -2
     
     left_score = 0
     right_score = 0
